@@ -5,15 +5,9 @@ Author: Konstantin Tretyakov
 License: MIT
 '''
 
-import sys
-PY2 = sys.version_info.major == 2
-
-if PY2:
-    from pdfminer.pdfparser import PDFParser
-    from pdfminer.pdfdocument import PDFDocument
-    from pdfminer.pdfpage import PDFPage
-else:
-    from pdfminer.pdfparser import PDFParser, PDFDocument, PDFPage
+from pdfminer.pdfparser import PDFParser
+from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfinterp import PDFResourceManager
 from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.converter import PDFPageAggregator
